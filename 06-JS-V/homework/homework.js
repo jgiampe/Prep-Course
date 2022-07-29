@@ -43,20 +43,12 @@ function agregarStringInvertida() {
   // Pista: Necesitarás usar "this" dentro de "reverse"
   String.prototype.reverse=function()
   {
-    let char, aux;
-    aux=Array.from(this);
+    let aux='';
+        
+    for(let i=this.length-1; i>=0; i--)
+      aux+=this[i];
     
-    for(let i=0; i<aux.length-1; i++)
-    {
-      for(let j=0; j<aux.length-i-1;j++)
-      {
-        char=aux[j];
-        aux[j]=aux[j+1];
-        aux[j+1]=char;
-
-      }
-    }
-    return aux.join('');
+    return aux;
   }
 }
 
