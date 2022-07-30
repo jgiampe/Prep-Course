@@ -17,10 +17,16 @@
     margin: 50px;
 }
 
+#h1
+{
+
+}
+
 body
-{   /* Alinea todo */
+{   /* Alinea centrado todo */
     /*text-align: center;*/
-    
+
+    /*Alinea centrado todo con flexbox*/
     flex-direction: column;
     display: -webkit-flex;
     display:         flex;
