@@ -5,10 +5,29 @@
     background-color: blue;
     padding: 50px;
     border: 5px red dashed;
+    
+    /* Alinea el div*/
+    margin:0 auto;
+    
 }
 
 #spanId
 {
     font-size: 18px;
     margin: 50px;
+}
+
+body
+{   /* Alinea todo */
+    /*text-align: center;*/
+    
+    flex-direction: column;
+    display: -webkit-flex;
+    display:         flex;
+    
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+
 }
